@@ -142,7 +142,7 @@ abstract class BaseTest extends TestCase
     public function singularReadersProvider(): array
     {
         return [
-            'Annotation reader' => [new AnnotationReader()],
+//            'Annotation reader' => [new AnnotationReader()],
             'Attribute reader' => [new AttributeReader()],
         ];
     }
@@ -150,7 +150,7 @@ abstract class BaseTest extends TestCase
     public function allReadersProvider(): array
     {
         return array_merge($this->singularReadersProvider(), [
-            'Selective reader' => [new SelectiveReader([new AttributeReader(), new AnnotationReader()])],
+            'Selective reader' => [new SelectiveReader([new AttributeReader()])],
         ]);
     }
 
