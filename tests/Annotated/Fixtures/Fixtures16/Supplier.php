@@ -9,11 +9,6 @@ use Cycle\Annotated\Annotation\Entity;
 use Cycle\Annotated\Annotation\Inheritance\JoinedTable as InheritanceJoinedTable;
 use Cycle\Annotated\Annotation\Table\Index;
 
-/**
- * @Entity
- * @InheritanceJoinedTable
- * @Index(columns={"index_id"}, unique=true)
- */
 #[Entity]
 #[InheritanceJoinedTable]
 #[Index(columns: ['index_id'], unique: true)]

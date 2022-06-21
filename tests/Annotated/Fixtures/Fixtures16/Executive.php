@@ -8,10 +8,6 @@ use Cycle\Annotated\Annotation\Column;
 use Cycle\Annotated\Annotation\Entity;
 use Cycle\Annotated\Annotation\Inheritance\JoinedTable as InheritanceJoinedTable;
 
-/**
- * @Entity
- * @InheritanceJoinedTable(outerKey="foo_id")
- */
 #[Entity]
 #[InheritanceJoinedTable(outerKey: 'foo_id')]
 class Executive extends ExecutiveProxy

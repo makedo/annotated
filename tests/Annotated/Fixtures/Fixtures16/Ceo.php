@@ -8,10 +8,6 @@ use Cycle\Annotated\Annotation\Column;
 use Cycle\Annotated\Annotation\Entity;
 use Cycle\Annotated\Annotation\Inheritance\SingleTable as InheritanceSingleTable;
 
-/**
- * @Entity
- * @InheritanceSingleTable)
- */
 #[Entity]
 #[InheritanceSingleTable]
 class Ceo extends Employee
